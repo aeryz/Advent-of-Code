@@ -1,5 +1,6 @@
-; This is a very dirty hack to make your binary smaller. It's disgusting but beautiful. Don't try this at home.
-; Credits for this hack: https://nathanotterness.com/2021/10/tiny_elf_modernized.html
+; The code itself starts from the function `_start`, until that, it's bunch of really dirty tricks to get the
+; smallest possible ELF binary. Without the input data, this binary would be below 400 bytes.
+; Credits for the ELF hack: https://nathanotterness.com/2021/10/tiny_elf_modernized.html
 
 [bits 64]
 
